@@ -1,0 +1,509 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  font-family: "Radio Canada", sans-serif;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+header {
+  width: 100%;
+  height: fit-content;
+  opacity: 1;
+  background-color: rgba(15, 15, 15, 0.9);
+  box-shadow: 0 1px 5px rgb(0 0 0 / 40%);
+  border-bottom: 1px solid #000;
+}
+
+header.main {
+  display: fixed;
+}
+
+header.main .dskbox {
+  max-width: 1512px;
+  height: 80px;
+  margin: 0 auto;
+  position: relative;
+}
+
+header.main .mobbox {
+  width: 100%;
+  height: 65px;
+  margin: 0 auto;
+  position: relative;
+  display: none;
+}
+
+header.main .dskbox .fix-box {
+  height: 80px;
+}
+
+header.main .mobbox .fix-box {
+  height: 65px;
+}
+
+header.main .dskbox .logo-container {
+  float: left;
+  padding: 0 20px;
+}
+
+header.main .mobbox .logo-container {
+  width: 100%;
+  text-align: center;
+  padding-top: 11px;
+}
+
+header.main .dskbox .logo {
+  background-color: rgb(255, 126, 6);
+  float: left;
+  height: auto;
+  padding: 7px 20px;
+  border-radius: 25px;
+  margin-top: 15px;
+}
+
+header.main .mobbox .logo {
+  width: fit-content;
+  margin: 0 auto;
+  background-color: rgb(255, 126, 6);
+  height: auto;
+  padding: 6px 16px;
+  border-radius: 23px;
+}
+
+header.main .dskbox .logo img {
+  width: auto;
+  height: 32px;
+  margin-top: 4px;
+}
+
+header.main .mobbox .logo img {
+  width: auto;
+  height: 24px;
+  margin-top: 4px;
+}
+
+header.main .dskbox .head-main-nav {
+  float: left;
+  height: 80px;
+  position: relative;
+}
+
+header.main .dskbox .main-header li {
+  float: left;
+  padding: 45px 15px;
+}
+
+header.main .dskbox .main-header li a {
+  color: rgb(205, 205, 205);
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+header.main .dskbox .main-header li a:hover {
+  color: rgb(255, 255, 255);
+}
+
+header.main .dskbox .head-item {
+  float: right;
+  position: relative;
+  padding: 0 5px;
+}
+
+header.main .dskbox .item-header li {
+  float: left;
+  padding: 45px 15px;
+}
+
+header.main .dskbox .item-header li a {
+  color: rgb(220, 220, 220);
+}
+
+header.main .dskbox .item-header li a:hover {
+  color: white;
+}
+
+header.main .dskbox .item-header li .search-container {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+header.main .dskbox .item-header li .search-form input {
+  overflow: hidden;
+  border-radius: 5px;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+  font-family: "Radio Canada", sans-serif;
+}
+
+header.main .dskbox .item-header li .search-button {
+  position: absolute;
+  height: 100%;
+  width: 25px;
+  background-color: white;
+  color: rgb(61, 61, 61);
+  border: none;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+header.main .dskbox .item-header li .search-button:hover {
+  color: #000;
+}
+
+header.main .dskbox .item-header li .bag-icon {
+  position: relative;
+}
+
+header.main .dskbox .item-header li .bag-icon::after {
+  content: "0";
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+  font-size: 11px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: rgb(255, 126, 6);
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
+
+header.main .dskbox .item-header li .bag-icon-container .empty-bag {
+  position: absolute;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 20px 30px;
+  text-transform: uppercase;
+  top: 81px;
+  right: 0;
+  color: black;
+  box-shadow: 0 12px 24px rgb(0 0 0 /10%);
+  text-align: center;
+  background-color: white;
+  display: none;
+}
+
+header.main .mobbox .menu-container {
+  position: absolute;
+  top: 37%;
+  left: 20px;
+  cursor: pointer;
+}
+
+header.main .mobbox .angle-left-container {
+  position: absolute;
+  top: 25px;
+  right: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+header.main .mobbox .item-container {
+  position: absolute;
+  top: 37%;
+  right: 20px;
+  float: right;
+}
+
+header.main .mobbox .item-list li {
+  float: right;
+  padding: 0 10px;
+}
+
+header.main .mobbox .item-list li a {
+  color: rgb(205, 205, 205);
+}
+
+header.main .mobbox .item-list li a:hover {
+  color: rgb(255, 255, 255);
+}
+
+header.main .mobbox .item-list li .bag-icon {
+  position: relative;
+}
+
+header.main .mobbox .item-list li .bag-icon::after {
+  content: "0";
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+  font-size: 11px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: rgb(255, 126, 6);
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
+
+header.main .mobbox .item-list li .bag-icon-container .empty-bag {
+  position: absolute;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  top: 42px;
+  right: -20px;
+  color: black;
+  box-shadow: 0 12px 24px rgb(0 0 0 /10%);
+  text-align: center;
+  background-color: white;
+  display: none;
+  width: 210px;
+}
+
+header.main .mobbox .item-list li .search-icon {
+  margin-top: 3px;
+  color: rgb(205, 205, 205);
+  cursor: pointer;
+}
+
+header.main .mobbox .item-list li .search-icon:hover {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+header.main .menu-nav-container {
+  position: absolute;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(30, 30, 30);
+  transform: translateX(-100%);
+  transition: all 200ms ease-in;
+}
+
+header.main .menu-nav-container .logo-container {
+  height: 65px;
+  border-bottom: 1px solid rgb(49, 49, 49);
+}
+
+header.main .menu-nav-container .overflow-auto {
+  height: calc(100vh - 65px);
+  overflow-y: scroll;
+}
+
+header.main .menu-nav-container .overflow-auto::-webkit-scrollbar {
+  display: none;
+}
+
+header.main .menu-nav-container .menu-list-container {
+  height: auto;
+  overflow: hidden;
+  user-select: none;
+}
+
+header.main .menu-nav-container .menu-list-item {
+  width: 100%;
+  padding: 20px 20px;
+  cursor: pointer;
+  color: rgb(205, 205, 205);
+}
+
+header.main .menu-nav-container .menu-list-item:hover {
+  background-color: rgba(255, 255, 255, 0.034);
+  color: rgb(255, 255, 255);
+}
+
+header.main .menu-nav-container .menu-list-item span {
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+header.main .menu-nav-container .menu-list-item .angle-down-icon {
+  float: right;
+  padding-right: 5px;
+  display: block;
+}
+
+header.main .menu-nav-container .menu-list-item .angle-up-icon {
+  float: right;
+  padding-right: 5px;
+  display: none;
+}
+
+header.main
+  .menu-list-container
+  .clothing-menu-container
+  .clothing-list
+  .list
+  a {
+  display: block;
+  width: 100%;
+  padding: 15px 50px 15px;
+  color: rgb(205, 205, 205);
+  cursor: pointer;
+}
+
+header.main
+  .menu-list-container
+  .clothing-menu-container
+  .clothing-list
+  .list
+  a:hover {
+  background-color: rgba(255, 255, 255, 0.034);
+  color: white;
+}
+
+header.main .menu-list-container .clothing-menu-container .clothing-list .list {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+header.main
+  .menu-list-container
+  .accessories-menu-container
+  .accessories-list
+  .list
+  a {
+  display: block;
+  width: 100%;
+  padding: 15px 50px 15px;
+  color: rgb(205, 205, 205);
+  cursor: pointer;
+}
+
+header.main
+  .menu-list-container
+  .accessories-menu-container
+  .accessories-list
+  .list
+  a:hover {
+  background-color: rgba(255, 255, 255, 0.034);
+  color: white;
+}
+
+header.main
+  .menu-list-container
+  .accessories-menu-container
+  .accessories-list
+  .list {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.list-wapper {
+  display: none;
+}
+
+[id^="btn"]:checked + .list-wapper {
+  display: block;
+}
+
+header.main .menu-nav-container .menu-list-link a{
+  display: block;
+  width: 100%;
+  padding: 15px 20px;
+  cursor: pointer;
+  color: rgb(205, 205, 205);
+   font-weight: 300;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+header.main .menu-nav-container .menu-list-link a:hover {
+  background-color: rgba(255, 255, 255, 0.034);
+  color: rgb(255, 255, 255);
+}
+
+header.main .mob-search-container {
+  position: absolute;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(30, 30, 30);
+  transform: translate(100%);
+  transition: all 200ms ease-in;
+}
+
+header.main .mob-search-container .hcon{
+  height: 65px;
+  width: 100%;
+  overflow: hidden;
+  border-bottom: 1px solid rgb(49, 49, 49);
+  padding: 0 20px;
+}
+
+header.main .mob-search-container .hcon .box{
+  width: 100%;
+  height: fit-content;
+}
+
+header .mob-search-container .hcon .box .angle-right-container{
+  float: left;
+  padding: 22px 0;
+}
+
+header .mob-search-container .hcon .box .angle-right-container .angle-right-icon{
+  cursor: pointer;
+}
+
+header .mob-search-container .hcon .box .search-container{
+  width: calc(100% - 30px);
+  float: right;
+  height: 65px;
+  position: relative;
+  padding: 15px 0;
+}
+
+header .mob-search-container .hcon .box .search-container input{
+  width: 100%;
+  height: 35px;
+  outline: none;
+  padding: 0 20px;
+  font-size: 18px;
+  border-radius: 10px;
+}
+
+header .mob-search-container .hcon .box .search-container .search-button{
+  position: absolute;
+  padding-right: 10px;
+  top: 15px;
+  right: 0;
+  width: 35px;
+  height: 35px;
+  background-color: initial;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 970px) {
+  .dskbox {
+    display: none;
+  }
+
+  header.main .mobbox {
+    display: block;
+  }
+}
