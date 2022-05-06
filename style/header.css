@@ -8,9 +8,9 @@
   user-select: none;
 }
 
-body {
+.whole-container {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   overflow: hidden;
 }
 
